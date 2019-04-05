@@ -1,5 +1,88 @@
+		<div id="withdraw-ui" class="modal fade">
+
+			<div class="modal-dialog modal-lg modal-dialog-centere">
+				
+				<div class="modal-content rounded-0 border-0">
+
+					<div class="modal-header">
+						<h4 class="modal-title">Withdraw Funds</h4>
+						<button type="button" class="close" data-dismiss="modal">
+				        	<span aria-hidden="true">&times;</span>
+				        </button>
+					</div>
+
+					<div class="modal-body">
+
+						<div class="form-row">
+
+							<div class="col-12 mb-4">
+								<!--<h5 class="d-inline-block mr-4">Withdrawable:&nbsp;&nbsp;</h5>-->
+								<sup>NGN</sup>
+								<h4 class="d-inline-block"><b>25000</b></h4>
+							</div>
+
+							<div class="col-md-6">
+								<div class="input-field">
+									<input type="text" name="bacc" placeholder="Bank Account Number">
+									<label>To Bank</label>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="input-field">
+									<select>
+										<option>UBA</option>
+										<option>GTB</option>
+										<option>ZENITH</option>
+									</select>
+									<label>Bank Name</label>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="input-field">
+									<input type="number" name="amnt" placeholder="Amount">
+									<label>Amount to Withdraw</label>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="input-field">
+									<select class="">
+										<option value="1">OXOOO!01JK:</option>
+										<option value="2">O:IIIO!01JK:</option>
+									</select>
+									<label>From Wallet?</label>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="input-field">
+									<input type="text" name="pin" placeholder="PIN Confirmation">
+									<label>Confirm Your PIN</label>
+								</div>
+							</div>
+
+						</div>
+						
+					</div>
+
+					<div class="modal-footer">
+
+						<button class="btn blue darken-2">
+							SCHEDULE
+						</button>
+
+						<button class="btn ml-4">
+							CONFIRM
+						</button>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
 		<script type="text/javascript">			
-			
+			$('select:not(.browser-default)').formSelect();
 		</script>
 
 		<style type="text/css">
@@ -29,8 +112,8 @@
 				}
 				.no-side-nav {
 					position: fixed;
-					top: 51px; left: 0;
-					z-index: 999999;
+					top: 59px; left: 0;
+					z-index: 1000;
 					width: 200px;
 				}
 
