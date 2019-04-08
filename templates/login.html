@@ -1,0 +1,35 @@
+<div class="d-flex align-items-center justify-content-center fixed-top h-100 no-body-body" style="z-index: 999999">
+	
+	<form onsubmit="return JAX.sendForm(window.index, this)||false;" class="d-block mx-5 w-100" style="max-width: 350px">
+
+		<div class="alert alert-danger mb-4"></div>
+		<div class="alert alert-success mb-4"></div>
+
+		<div class="bg-white rounded border w-100">
+
+			<div class="p-3">
+				<h4>Login</h4>
+				<span>Howdy User, Login to See Your Account</span>
+			</div>
+
+			<div class="border-bottom border-top p-3">
+
+				<input type="text" name="login" placeholder="Username" class="browser-default form-control form-control-lg" required>
+				<br/>
+				<input type="password" name="pass" placeholder="Password" class="browser-default form-control form-control-lg" required>
+
+			</div>
+
+			<div class="p-3">
+
+				<input type="checkbox" name="atl" value="1" class="browser-default"> Remember Me?
+				<br/>
+				<input id="login-button" type="submit" value="Sign In" class="btn btn-succes w-100 z-depth-0 my-2" style="background: navy; border-color: navy">
+
+			</div>
+
+		</div>
+
+	</form>
+
+</div>
