@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html style="overflow-x: hidden;">
+	<head>
+		<link rel="stylesheet" href="../minify/materialize.min.css" type="text/css">
+		<link rel="stylesheet" href="../minify/bootstrap.min.css" type="text/css">
+		<link rel="stylesheet" href="../minify/font-awesome.min.css" type="text/css">
+	
+		<script src="../minify/jquery.min.js"></script>
+		<script src="../minify/materialize.js"></script>
+		<script src="../minify/bootstrap.bundle.min.js"></script>
+		
+		<title>Customer UI Bankify</title>
+	</head>
+	<body class="grey lighten-3 no-body" style="">
+
+		<div class="h-100 no-side-nav d-none d-lg-block" style="">
+
+			<div class="navbar navbar-light navbar-expand bg-white border-right h-100 flex-lg-column">
+
+				<ul class="navbar-nav flex-lg-column align-self-start">
+					<li class="nav-item mx-2 my-lg-2">
+						<a href="?url=index.html" class="nav-link no-link">
+							<i class="fa fa-home fa-1x grey-text text-darken-1"></i>
+							&nbsp;
+							Dashboard
+						</a>
+					</li>
+					<li class="nav-item mx-2 my-lg-2">
+						<a href="?url=add-wallet.html" class="nav-link no-link">
+							<i class="fa fa-folder-open-o fa-1x grey-text text-darken-1"></i>
+							&nbsp;
+							add Wallet
+						</a>
+					</li>
+					<li class="nav-item mx-2 my-lg-2">
+						<a href="?url=add-user.html" class="nav-link no-link">
+							<i class="fa fa-user-plus fa-1x grey-text text-darken-1"></i>
+							&nbsp;
+							add User
+						</a>
+					</li>
+					<li class="nav-item mx-2 my-lg-2">
+						<a href="?url=users.html" class="nav-link no-link">
+							<i class="fa fa-users fa-1x grey-text text-darken-1"></i>
+							&nbsp;
+							Users
+						</a>
+					</li>
+					<li class="nav-item mx-2 my-lg-2">
+						<a href="?url=add-transact.html" class="nav-link no-link">
+							<i class="fa fa-arrows fa-1x grey-text text-darken-1"></i>
+							&nbsp;
+							add Transaction
+						</a>
+					</li>
+					<li class="nav-item mx-2 my-lg-2">
+						<a href="?url=add-loans.html" class="nav-link no-link">
+							<i class="fa fa-plus-circle fa-1x grey-text text-darken-1"></i>
+							&nbsp;
+							add Loans
+						</a>
+					</li>
+					<li class="nav-item mx-2 my-lg-2">
+						<a href="?url=add-loan-pay.html" class="nav-link no-link">
+							<i class="fa fa-plus-circle fa-1x grey-text text-darken-1"></i>
+							&nbsp;
+							Loan Payment
+						</a>
+					</li>
+				</ul>
+
+			</div>
+
+		</div>
+
+		<div class="navbar navbar-light navbar-expand-md bg-white border-bottom fixed-top">
+
+			<a href="" class="navbar-brand white-text">
+				<h4>
+					<span class="purple-text">Alt</span><span class="red-text">et</span><span class="purple-text">hic</span> <span class="red">M</span><span class="purple">F</span><span class="red">B</span>
+				</h4>
+			</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+    			<span class="fa fa-2x fa-bars"></span>
+  			</button>
+
+  			<div class="collapse navbar-collapse" id="navbar">
+	  			<ul class="navbar-nav mx-auto d-lg-none">
+					<li class="nav-item mx-2 my-lg-2">
+						<a href="?url=index.html" class="nav-link no-link">
+							<i class="fa fa-home fa-1x grey-text text-darken-1"></i>
+							&nbsp;
+							Dashboard
+						</a>
+					</li>
+					<li class="nav-item mx-2 my-lg-2">
+						<a href="?url=add-wallet.html" class="nav-link no-link">
+							<i class="fa fa-folder-open-o fa-1x grey-text text-darken-1"></i>
+							&nbsp;
+							add Wallet
+						</a>
+					</li>
+					<li class="nav-item mx-2 my-lg-2">
+						<a href="?url=add-user.html" class="nav-link no-link">
+							<i class="fa fa-user-plus fa-1x grey-text text-darken-1"></i>
+							&nbsp;
+							add User
+						</a>
+					</li>
+					<li class="nav-item mx-2 my-lg-2">
+						<a href="?url=users.html" class="nav-link no-link">
+							<i class="fa fa-users fa-1x grey-text text-darken-1"></i>
+							&nbsp;
+							Users
+						</a>
+					</li>
+					<li class="nav-item mx-2 my-lg-2">
+						<a href="?url=add-transact.html" class="nav-link no-link">
+							<i class="fa fa-arrows fa-1x grey-text text-darken-1"></i>
+							&nbsp;
+							add Transaction
+						</a>
+					</li>
+					<li class="nav-item mx-2 my-lg-2">
+						<a href="?url=add-loans.html" class="nav-link no-link">
+							<i class="fa fa-plus-circle fa-1x grey-text text-darken-1"></i>
+							&nbsp;
+							add Loans
+						</a>
+					</li>
+					<li class="nav-item mx-2 my-lg-2">
+						<a href="?url=add-loan-pay.html" class="nav-link no-link">
+							<i class="fa fa-plus-circle fa-1x grey-text text-darken-1"></i>
+							&nbsp;
+							Loan Payment
+						</a>
+					</li>
+				</ul>
+
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item mx-2 dropdown">
+						<a data-toggle="dropdown" data-target="#links" class="btn dropdown-toggle">
+							<img src="images/profileDefault.png" class="circle" width="25" height="25">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-right" id="links">
+							<li class="dropdown-item">
+								<a href="" class="dropdown-link grey-text text-darken-1 no-link">Edit Profile</a>
+							</li>
+							<li class="dropdown-item">
+								<a href="" class="dropdown-link grey-text text-darken-1 no-link">Change Password</a>
+							</li>
+							<li class="dropdown-item">
+								<a href="" class="dropdown-link grey-text text-darken-1 no-link">Transaction Log</a>
+							</li>
+							<li class="dropdown-item">
+								<a href="" class="dropdown-link grey-text text-darken-1 no-link">My Altecht</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+		</div>

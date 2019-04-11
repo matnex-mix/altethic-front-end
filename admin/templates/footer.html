@@ -1,0 +1,60 @@
+		<script type="text/javascript">			
+			$('select:not(.browser-default)').formSelect();
+		</script>
+
+		<style type="text/css">
+			
+			.no-link {
+				text-decoration: none !important;
+				position: relative;
+			}
+			.no-link::after {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				content: '';
+				top: 0; left: 0;
+				display: none;
+				display: inline-block;
+				background: transparent;
+			}
+			.no-link:hover::after {
+				background: rgba(255, 255, 255, 0.3);
+			}
+			.alert:empty {
+				display: none !important;
+			}
+			input[type=checkbox].browser-default {
+				pointer-events: unset;
+				opacity: 1;
+				display: inline;
+				position: static;
+				margin-right: .5rem;
+			}
+
+			@media only screen and (min-width: 992px) {
+				
+				.no-body {
+					margin-left: 200px 
+				}
+				.no-side-nav {
+					position: fixed;
+					top: 59px; left: 0;
+					z-index: 1000;
+					width: 200px;
+				}
+
+			}
+
+			.no-body {
+				background-image: linear-gradient(to right, #b82a2a, #0A0A4F);
+			}
+
+			.whit, .bg-whit {
+				background: rgba(240, 240, 240, 0.7) !important;
+			}
+
+		</style>
+
+	</body>
+</html>
