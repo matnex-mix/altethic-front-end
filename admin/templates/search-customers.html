@@ -1,0 +1,161 @@
+<div class="no-body-body mt-4 p-4 p-md-5">
+	<br/><br/>
+
+	<div class="z-depth-1 white p-4">
+
+		<h4>Customers</h4>
+		<br/>
+
+		<div class="">
+
+			<div class="position-relative">
+				<input id="sch" type="search" class="browser-default form-control form-search" placeholder="Filter Customer">
+				<button class="btn btn-sm btn-small bg-transparent z-depth-0 position-absolute" style="top: 0; right: 0" onclick="$('#sch').val(''); $('#sch').focus()">
+					<i class="fa fa-times grey-text lighten-4"></i>
+				</button>
+			</div>
+
+			<br/>
+
+			<div class="table-responsive">
+
+				<table>
+					<tr>
+						<th>
+							ID
+						</th>
+						<th>
+							Name
+						</th>
+						<th>
+							Balance
+						</th>
+						<th>
+							Loan
+						</th>
+						<th>
+							Join date
+						</th>
+						<th>
+							Last Transaction
+						</th>
+						<th>
+							Action
+						</th>
+					</tr>
+					<tr>
+						<td>
+							112CQO
+						</td>
+						<td>
+							Matnex Mix
+						</td>
+						<td>
+							<small><sup>NGN</sup></small>25000
+						</td>
+						<td>
+							<small><sup>NGN</sup></small>10000
+						</td>
+						<td>
+							10/12/2019 12:21:56
+						</td>
+						<td>
+							10/12/2019 12:21:56
+						</td>
+						<td>
+							<button class="btn btn-sm btn-small" data-toggle="modal" data-target="#edit-customer" >
+								EDIT
+							</button>
+						</td>
+					</tr>
+				</table>
+
+			</div>
+
+	</div>
+
+</div>
+
+<div id="edit-customer" class="modal fade">
+
+	<div class="modal-dialog modal-dialog-centered">
+
+		<div class="modal-content rounded-0 border-0">
+
+			<div class="modal-header">
+				<h4>Customer: #200XER765</h4>		
+			    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			      	<span class="fa fa-times"></span>
+			    </button>
+			</div>
+
+			<div class="modal-body">
+
+				<form class="form-row">
+
+					<div class="col-12">
+
+						<img src="../images/profileDefault.png" class="d-block circle p-2 border mx-auto" onclick="$('#profilePicture').click();" style="width: 9em; height: 9em">
+						<input type="file" id="profilePicture" name="pp" class="d-none">
+						<br/>
+
+						<div class="input-field w-50 mx-auto mb-4">
+							<select name="role">
+								<option value="Role 1" >Role 1</option>
+								<option value="Role 2" >Role 2</option>
+								<option value="Role 3" selected>Role 3</option>
+							</select>
+							<label>Customer Role</label>
+						</div>
+						
+					</div>
+
+					<div class="col-sm-6 mb-4">
+						<div class="input-field">
+							<label>First and Last Name</label>
+							<input type="text" name="fullName" placeholder="Full Name" class="">
+						</div>
+					</div>
+					<div class="col-sm-6 mb-4">
+						<div class="input-field">
+							<label>Mobile Telephone</label>
+							<input type="tel" name="tel" placeholder="Phone Number">
+						</div>
+					</div>
+					<div class="col-sm-6 mb-4">
+						<div class="input-field">
+							<label>Email Adress</label>
+							<input type="email" name="email" placeholder="Email">
+						</div>
+					</div>
+					<div class="col-sm-6 mb-4">
+						<div class="input-field">
+							<select name="gender">
+								<option value="male" >Male</option>
+								<option value="female" >Female</option>
+								<option value="other" >Other</option>
+							</select>
+							<label>Choose Your Gender</label>
+						</div>
+					</div>
+					<div class="col-12 mb-2">
+						<div class="input-field">
+							<label>Address</label>
+							<textarea rows="60" name="addr" class="materialize-textarea">%Adress Text%</textarea>
+						</div>
+					</div>
+					<div class="col-12 mb-2 text-right">
+						<button class="btn rounded-0">
+							EDIT
+						</button>
+					</div>
+					
+				</form>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
